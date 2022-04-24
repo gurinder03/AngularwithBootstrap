@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'AngularwithBootstrap';
+Title = "ngIf lession";
+show = false;
+color = 'red';
+
 }
