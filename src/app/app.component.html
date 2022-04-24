@@ -1,0 +1,60 @@
+<p>
+  <ngb-alert [dismissible]="false">
+    <strong>Warning!</strong> Better check yourself, you're not looking too good.
+  </ngb-alert>
+</p>
+
+
+<br>
+<br>
+<ul ngbNav #nav="ngbNav" class="nav-tabs">
+  <li ngbNavItem>
+    <a ngbNavLink>First</a>
+    <ng-template ngbNavContent>First content</ng-template>
+  </li>
+  <li ngbNavItem>
+    <a ngbNavLink>Second</a>
+    <ng-template ngbNavContent>Second content</ng-template>
+  </li>
+</ul>
+<div [ngbNavOutlet]="nav"></div>
+
+
+<br>
+<br>
+<p>
+  <ngb-progressbar type="success" [value]="25">default</ngb-progressbar>
+</p>
+<p>
+  <ngb-progressbar type="info" [value]="50" height="10px">10px</ngb-progressbar>
+</p>
+<p>
+  <ngb-progressbar type="warning" [value]="75" height=".5rem">.5rem</ngb-progressbar>
+</p>
+
+
+<br>
+<br>
+<p>This progress bar uses the customized default values.</p>
+<p>
+  <ngb-progressbar [value]="70"></ngb-progressbar>
+</p>
+
+<p>This progress bar uses the customized default values, but changes the type using an input.</p>
+<p>
+  <ngb-progressbar [value]="500" type="dark"></ngb-progressbar>
+</p>
+
+<br>
+<br>
+<p>You can easily control dropdowns programmatically using the exported dropdown instance.</p>
+
+<div class="d-inline-block" ngbDropdown #myDrop="ngbDropdown">
+  <button type="button" class="btn btn-outline-primary me-2" id="dropdownManual" ngbDropdownAnchor
+    (focus)="myDrop.open()">Toggle dropdown</button>
+  <div ngbDropdownMenu aria-labelledby="dropdownManual">
+    <button ngbDropdownItem>Action - 1</button>
+    <button ngbDropdownItem>Another Action</button>
+    <button ngbDropdownItem>Something else is here</button>
+  </div>
+</div>
