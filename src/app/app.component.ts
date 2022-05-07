@@ -7,8 +7,6 @@ import { BrowserModule } from '@angular/platform-browser';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-Title = "ngIf lession";
-show = false;
-color = 'red';
-
+Title = "SwitchCase lession";
+color = 'blue';
 }
