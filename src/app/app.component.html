@@ -1,8 +1,16 @@
 <h1>{{Title}}</h1>
 <h2>Tech Engineer youtube Channel</h2>
 
-<h3 *ngFor="let item of Users">{{item}}</h3>
-
-<ul *ngFor="let std of Students">
-    <li>Name : {{std.name|uppercase}} <br> Country : {{std.Country|lowercase}}</li>
+<ul *ngFor="let stds of Students;">
+    <li> Emp ID : {{stds.EmployeeID}}
+    <div *ngFor="let std of stds.EmpDetail;">
+        <span>{{std.Name|uppercase}} </span>
+        <span>{{std.Country|lowercase}} </span>
+        <span>{{std.Mobile }} </span>
+        <span>{{std.City |uppercase}} </span>
+        <span>{{std.PinCode}} </span>
+        <span>{{std.Education | lowercase}} </span>
+    </div>
+    </li>
 </ul>
+
