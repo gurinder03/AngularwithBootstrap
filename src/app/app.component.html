@@ -1,10 +1,8 @@
 <h1>{{Title}}</h1>
 <h2>Tech Engineer youtube Channel</h2>
 
-<div [ngSwitch]="color">
-<h1 *ngSwitchCase="'red'" style="color:red ;">  Red Color</h1>
-<h1 *ngSwitchCase="'green'" style="color:green ;">  Green Color</h1>
-<h1 *ngSwitchCase="'yellow'" style="color:yellow ;">  Yellow Color</h1>
-<h1 *ngSwitchCase="'blue'" style="color:blue ;">  Blue Color</h1>
-<h1 *ngSwitchDefault>Unknown Color</h1>
-</div>
+<h3 *ngFor="let item of Users">{{item}}</h3>
+
+<ul *ngFor="let std of Students">
+    <li>Name : {{std.name|uppercase}} <br> Country : {{std.Country|lowercase}}</li>
+</ul>

@@ -9,4 +9,6 @@ import { BrowserModule } from '@angular/platform-browser';
 export class AppComponent {
 Title = "SwitchCase lession";
 color = 'blue';
+Users = ['Gurinder','Inder','Jass','Harry','Preet'];
+Students = [{name:'Gurinder',Country : 'India'},{name:'Inder',Country : 'Canada'},{name:'Preet',Country : 'USA'}]
 }
