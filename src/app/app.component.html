@@ -1,16 +1,12 @@
-<h1>{{Title}}</h1>
+<h1>{{Title | titlecase}}</h1>
+<h1>{{Title | slice : 6 : 13}}</h1>
 <h2>Tech Engineer youtube Channel</h2>
+<h1>{{3.7 | currency : 'GBP'}}</h1>
+<h1>{{CurrentDate | date : 'fullDate'}}</h1>
+<br>
+<br>
+<br>
+<h1>{{Students | json | lowercase}}</h1>
 
-<ul *ngFor="let stds of Students;">
-    <li> Emp ID : {{stds.EmployeeID}}
-    <div *ngFor="let std of stds.EmpDetail;">
-        <span>{{std.Name|uppercase}} </span>
-        <span>{{std.Country|lowercase}} </span>
-        <span>{{std.Mobile }} </span>
-        <span>{{std.City |uppercase}} </span>
-        <span>{{std.PinCode}} </span>
-        <span>{{std.Education | lowercase}} </span>
-    </div>
-    </li>
-</ul>
+
 

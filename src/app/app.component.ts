@@ -10,6 +10,7 @@ export class AppComponent {
 Title = "ngFor lession";
 color = 'blue';
 Users = ['Gurinder','Inder','Jass','Harry','Preet'];
+CurrentDate = Date();
 Students = [
   { EmployeeID:'001', EmpDetail : 
   [
@@ -17,11 +18,6 @@ Students = [
     {City : 'Chandigarh'},{PinCode : '140140'},
     
     {Education : 'BCA'}
-  ]},
-  {EmployeeID:'002', EmpDetail : 
-  [
-    {Name : 'Harry'},{Country : 'USA'},{Mobile : '5656467465'},
-    {City : 'San Franco'},{PinCode : '05552'},{Education : 'M.Tech'}
   ]},
   {EmployeeID:'003', EmpDetail : 
   [
